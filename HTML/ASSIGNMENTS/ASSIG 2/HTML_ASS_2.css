@@ -1,0 +1,66 @@
+.Table_Container {
+    padding: 0px 100px;
+}
+
+table {
+    border: 2px solid black;
+    width: 50%;
+}
+
+#resumeImage {
+    width: 250px;
+    height: 250px;
+}
+
+hr {
+    font-weight: bold;
+    border-width: 3px;
+    border-radius: 4px;
+    border-color: deepskyblue;
+}
+
+.main_table_formating {
+    height: 80px;
+    width: 80px;
+}
+
+h2 {
+    color: #ed1f1f;
+}
+
+#education_table {
+    width: 100%;
+    height: 50%;
+    vertical-align: middle;
+    border-collapse: collapse !important;
+}
+
+.education_table_tr_th_td_formating {
+    border: 2px solid black !important;
+    border-collapse: collapse !important;
+    padding: 10px !important;
+}
+
+.education_table_formating {
+    height: 100px;
+    width: 100px;
+}
+
+li {
+    margin: 8px 0px 0px 0px;
+}
+
+.Main_heading {
+    font-size: 40px;
+    color: black;
+    font-weight: bolder;
+}
+
+.Main_heading_2 {
+    color: black;
+    font-weight: bolder;
+}
+
+caption {
+    display: none;
+}

@@ -1,0 +1,57 @@
+.right_Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.main_Heading {
+    font-size: 44px;
+}
+
+.td_heading_styling {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 0px 0px 15px;
+}
+
+.primary_font_size {
+    font-size: 25px;
+}
+
+.primary_cell_height_size {
+    height: 50px;
+}
+
+.subject_font_size {
+    font-size: 20px;
+}
+
+.grade_font_formating {
+    font-size: 20px;
+    text-align: center;
+}
+
+table {
+
+    border: 1px solid black;
+    width: 1000px;
+    height: 200px;
+}
+
+.table_heading {
+    text-align: center;
+    font-weight: bold;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.display_none {
+    display: none;
+}

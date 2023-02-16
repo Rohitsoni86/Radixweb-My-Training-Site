@@ -1,0 +1,55 @@
+table {
+    border: 2px solid black
+}
+
+td {
+    padding: 12px;
+}
+
+.td_end {
+    text-align: end;
+}
+
+.td_start {
+    text-align: start;
+}
+
+.form_container {
+    text-align: center;
+}
+
+.input_text_style {
+    border: 2px solid #5a5a68;
+    border-radius: 3px;
+    height: 1.2rem;
+    width: 14.2rem;
+    font-size: 17px;
+    padding: 7px;
+}
+
+.drop_down_Styling {
+    border: 2px solid #5a5a68;
+    border-radius: 3px;
+    height: 2.2rem;
+    width: 15.2rem;
+    font-size: 17px;
+}
+
+
+label {
+    font-size: larger;
+}
+
+
+.inner_Container {
+    margin: auto;
+}
+
+form {
+    text-align: -webkit-center;
+}
+
+.button_css {
+    padding: 12px;
+    font-size: 18px;
+}

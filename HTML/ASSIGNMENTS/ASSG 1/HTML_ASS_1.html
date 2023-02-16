@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Catalogue</title>
+    <link rel="stylesheet" href="./HTML_ASS_1.css">
+    <style>
+         *{
+            box-sizing: border-box;
+         }
+        body{
+            margin: 0px;
+        }
+        header{
+                display: flex;
+                justify-content: space-between;
+                background-color: darkgrey;
+                flex-wrap: wrap;
+        }
+        
+        #Navigation_Container {
+            padding: 12px;
+          
+        }
+        #Navigation_Container nav{
+            display: flex;
+            flex-wrap: wrap;
+          
+        }
+       #Navigation_Container nav a {
+          padding: 12px;
+          margin: 12px;
+          border: 2px solid black;
+          color: black;
+          text-decoration: none;
+              }
+
+        #main_logo{
+            width: 80px;
+        }
+        #logo_Container{
+            padding: 12px;
+        }
+        
+        #Middle_Section{
+                display: flex;
+                 height: 100vh;
+                 background: antiquewhite;
+                 flex-wrap: wrap;
+        }
+        .left_Bar{
+            flex: 15%;
+            background-color: brown;
+            
+        }
+        .right_Section{
+            flex: 75%;
+            background-color: burlywood;
+        }
+
+        #right_section_image{
+            height: 800px;
+            width: 100%;
+        }
+        .image_Container{
+            text-align: center;
+            width: 100%;
+           }
+
+           /* ################################### Media Queries ############################### */
+           @media only screen and (max-width: 800px) {
+            #Middle_Section {
+                 display: flex;
+                 height: 100vh;
+                 background: antiquewhite;
+                 flex-wrap: wrap;
+                 align-content: flex-start;
+            }
+
+            .left_Bar {
+              height: 250px;
+              background-color: brown;
+              width: 100%;
+                  }
+
+                  .right_Section {
+                     flex: 75%;
+                     background-color: burlywood;
+                     height: -webkit-fill-available;
+                    }
+           }
+           /* @media only screen and (max-width: 400px) {
+            
+           } */
+           /* ################################### Media Queries ############################### */
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo_Container"> 
+            <img id="main_logo" src="./radixweb_logo.png" alt="radix Web Logo">
+        </div>
+        <div id="Navigation_Container">
+           <nav>
+               <a href="../../../HOME.html">Home</a>
+               <a href="../../HTML_HOME.html">HTML</a>
+               <a href="../../../CSS/CSS_HOME.html">CSS</a>
+               <a href="#">Bootstrap</a>
+               <a href="#">JavaScript</a>
+               <a href="#">JQuery</a>
+               <a href="#">Mini Projects</a>
+               <a href="#">SQL</a>
+           </nav>
+        </div>
+        </header>
+        <div id="Middle_Section">
+            <div class="left_Bar">
+                 <ul>
+                    <li> Day 1 
+                        <ul>
+                            <li>ASSIGNMENTS
+                             <ul>
+                                <li>
+                                    <a href="./HTML_ASS_1.html">Assignemnt 1</a>
+                                </li>
+                                <li>
+                                    <a href="../ASSIG 2/HTML_ASS_2.html">Assignemnt 2</a>
+                                </li>
+                             </ul>
+
+                            </li>
+                            <li>PRACTICES
+                                <ul>
+                                  <a href="../../PRACTICE/PRACTICE 1/HTML_PRACT_1.html"><li>Practice 1</li></a>  
+                                   <a href="../../PRACTICE/PRACTICE 2/HTML_PRACT_2.html"><li>Practice 2</li></a> 
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                 </ul>
+            </div>
+            <div class="right_Section">
+             
+                    <div class="form_container">
+                        <h2>Registration Form</h2>
+                        <div class="inner_Container">
+                            <form action="#" target="_blank">
+                                <table>
+                                    <caption>Enter Your Details Here :</caption>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_end"><label for="Emp_Name" class="label_text">Name :</label></td>
+                                        <td class="td_start"><input type="text" autofocus="autofocus" id="Emp_Name" name="Emp_Name" required
+                                                class="input_text_style"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_end"><label for="Emp_Age">Age :</label></td>
+                                        <td class="td_start"><input type="number" id="Emp_Age" name="Emp_Age" required pattern="[0-9]{2}"
+                                                class="input_text_style"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_end"><label for="Emp_gender">Gender :</label></td>
+                                        <td class="td_start">
+                                            <input type="radio" name="Emp_gender" value="Male" id="Emp_gender"> <label
+                                                for="Male">Male</label>
+                                            <input type="radio" name="Emp_gender" value="Female" id="Emp_gender"> <label
+                                                for="Female">Female</label><br />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_end"><label for="Emp_Designation" class="label_text">Designation :</label></td>
+                                        <td class="td_start"><input type="text" id="Emp_Designation" name="Emp_Designation" required
+                                                class="input_text_style"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_end"><label for="Emp_Salary" class="label_text">Salary :</label></td>
+                                        <td class="td_start"> <input type="text" id="Emp_Salary" name="Emp_Salary" required
+                                                class="input_text_style"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_end"><label for="location">Location : </label></td>
+                                        <td class="td_start"><select name="Emp_location" id="Emp_location" required
+                                                class="drop_down_Styling">
+                                                <option value="Assam">Assam</option>
+                                                <option value="Bihar">Bihar</option>
+                                                <option value="Chandigarh">Chandigarh</option>
+                                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                                <option value="Daman_Diu">Daman and Diu</option>
+                                                <option value="Delhi">Delhi</option>
+                                                <option value="Goa">Goa</option>
+                                                <option value="Gujarat">Gujarat</option>
+                                                <option value="KL">Kerala</option>
+                                                <option value="MP">Madhya Pradesh</option>
+                                                <option value="MH">Maharashtra</option>
+                                                <option value="PB">Punjab</option>
+                                                <option value="RJ">Rajasthan</option>
+                                                <option value="Uttar_Pradesh">Uttar Pradesh</option>
+                                            </select></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_end"><label for="Emp_Email">Email : </label></td>
+                                        <td class="td_start"><input type="email" name="Emp_Email" id="Emp_Email_id" required
+                                                class="input_text_style"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_end"><label for="Emp_Date_j"> Date of Joining : </label></td>
+                                        <td class="td_start"><input type="date" name="Date_j" id="Date_joining" required
+                                                class="input_text_style"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_end"><label for="Emp_Contact"> Contact : </label></td>
+                                        <td class="td_start"><input type="text" name="Contact" id="Contact" required
+                                                pattern="[0-9]{5}-[0-9]{5}" placeholder="XXXXX-XXXXX" class="input_text_style"><br>
+                                            <p>Excluding +91</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_end "><input type="submit" value="Submit" id="save_btn" onclick="submitData(event)"
+                                                class="button_css"></td>
+                                        <td class="td_start "><input type="reset" value="Reset" class="button_css"></td>
+                                    </tr>
+                    
+                            </form>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <h4> Your data comes here : </h4>
+                        <h5>Retrive data <input type="button" value="Retrive" onclick="RetriveData(event)"> </h5>
+                        <p id="userData">Data</p>
+                    </div>
+            
+
+            </div>
+        </div>
+</body>
+</html>

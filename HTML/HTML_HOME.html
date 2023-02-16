@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Catalogue</title>
+    <style>
+        *{
+            box-sizing: border-box;
+         }
+        body{
+            margin: 0px;
+        }
+        header{
+                display: flex;
+                justify-content: space-between;
+                background-color: darkgrey;
+                flex-wrap: wrap;
+        }
+        
+        #Navigation_Container {
+            padding: 12px;
+          
+        }
+        #Navigation_Container nav{
+            display: flex;
+            flex-wrap: wrap;
+          
+        }
+       #Navigation_Container nav a {
+          padding: 12px;
+          margin: 12px;
+          border: 2px solid black;
+          color: black;
+          text-decoration: none;
+              }
+
+        #main_logo{
+            width: 80px;
+        }
+        #logo_Container{
+            padding: 12px;
+        }
+        
+        #Middle_Section{
+                display: flex;
+                 height: 100vh;
+                 background: antiquewhite;
+                 flex-wrap: wrap;
+        }
+        .left_Bar{
+            flex: 15%;
+            background-color: brown;
+        }
+        .right_Section{
+            flex: 75%;
+            background-color: burlywood;
+        }
+
+        #right_section_image{
+            height: 800px;
+            width: 100%;
+        }
+        .image_Container{
+            text-align: center;
+            width: 100%;
+           }
+
+           #home_image{
+            width: 60%;
+           }
+           /* ################################### Media Queries ############################### */
+           @media only screen and (max-width: 800px) {
+            #Middle_Section {
+                 display: flex;
+                 height: 100vh;
+                 background: antiquewhite;
+                 flex-wrap: wrap;
+                 align-content: flex-start;
+            }
+
+            .left_Bar {
+              height: 250px;
+              background-color: brown;
+              width: 100%;
+                  }
+
+                  .right_Section {
+                     flex: 75%;
+                     background-color: burlywood;
+                     height: -webkit-fill-available;
+                    }
+           }
+           
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo_Container"> 
+            <img id="main_logo" src="./radixweb_logo.png" alt="radix Web Logo">
+        </div>
+        <div id="Navigation_Container">
+           <nav>
+               <a href="../HOME.html">Home</a>
+               <a href="./HTML_HOME.html">HTML</a>
+               <a href="../CSS/CSS_HOME.html">CSS</a>
+               <a href="#">Bootstrap</a>
+               <a href="#">JavaScript</a>
+               <a href="#">JQuery</a>
+               <a href="#">Mini Projects</a>
+               <a href="#">SQL</a>
+           </nav>
+        </div>
+        </header>
+        <div id="Middle_Section">
+            <div class="left_Bar">
+                 <ul>
+                    <li> Day 1 
+                        <ul>
+                            <li>ASSIGNMENTS
+                             <ul>
+                                <li>
+                                    <a href="../HTML/ASSIGNMENTS/ASSG 1/HTML_ASS_1.html">Assignemnt 1</a>
+                                </li>
+                                <li>
+                                    <a href="./ASSIGNMENTS/ASSIG 2/HTML_ASS_2.html">Assignemnt 2</a>
+                                </li>
+                             </ul>
+
+                            </li>
+                            <li>PRACTICES
+                                <ul>
+                                  <a href="./PRACTICE/PRACTICE 1/HTML_PRACT_1.html"><li>Practice 1</li></a>  
+                                   <a href="./PRACTICE/PRACTICE 2/HTML_PRACT_2.html"><li>Practice 2</li></a> 
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                 </ul>
+            </div>
+            <div class="right_Section">
+             
+                <div class="image_Container" style="text-align: center;">
+                   <img id="home_image" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" alt="HTML LOGO">
+                </div>
+            </div>
+        </div>
+</body>
+</html>

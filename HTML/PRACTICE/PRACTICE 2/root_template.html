@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Catalogue</title>
+    <style>
+         *{
+            box-sizing: border-box;
+         }
+        body{
+            margin: 0px;
+            display: flex;
+             flex-direction: column;
+            height: 100vh;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            background-color: darkgrey;
+        }
+        
+        #Navigation_Container nav{
+            display: flex;
+            justify-content: space-around;
+        }
+       #Navigation_Container nav a{
+            padding: 22px;
+             margin: 22px;
+        }
+
+        #main_logo{
+            width: 80px;
+        }
+        #logo_Container{
+            padding: 12px;
+        }
+        
+        #Middle_Section{
+            display: flex;
+            height: 100vh;
+            background: antiquewhite;
+        }
+        .left_Bar{
+            flex: 15%;
+            background-color: brown;
+        }
+        .right_Section{
+            flex: 75%;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo_Container"> 
+            <img id="main_logo" src="./radixweb_logo.png" alt="radix Web Logo">
+        </div>
+        <div id="Navigation_Container">
+           <nav>
+               <a href="#">Home</a>
+               <a href="#">HTML</a>
+               <a href="#">CSS</a>
+               <a href="#">Bootstrap</a>
+               <a href="#">JavaScript</a>
+               <a href="#">JQuery</a>
+               <a href="#">Mini Projects</a>
+               <a href="#">SQL</a>
+           </nav>
+        </div>
+        </header>
+        <div id="Middle_Section">
+            <div class="left_Bar">
+                 <ul>
+                    <li> Day 1 
+                        <ul>
+                            <li>ASSIGNMENTS
+                             <ul>
+                                <li>
+                                    <a href="">Assignemnt 1</a>
+                                </li>
+                                <li>
+                                    <a href="">Assignemnt 2</a>
+                                </li>
+                             </ul>
+
+                            </li>
+                            <li>PRACTICES
+                                <ul>
+                                  <a href=""><li>Practice 1</li></a>  
+                                   <a href=""><li>Practice 2</li></a> 
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                 </ul>
+            </div>
+            <div class="right_Section">
+
+            </div>
+        </div>
+</body>
+</html>
