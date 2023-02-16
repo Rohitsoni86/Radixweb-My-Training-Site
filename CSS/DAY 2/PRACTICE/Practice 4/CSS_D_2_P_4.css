@@ -1,0 +1,43 @@
+ .main_Container {
+     border: 2px solid rgb(35, 23, 199);
+     padding: 12px;
+ }
+
+ h1 {
+     font-size: 80px;
+ }
+
+
+
+ @media only screen and (max-width: 1200px) {
+     .main_Container {
+         border: 2px solid rgb(236, 22, 22);
+         padding: 44px;
+     }
+
+     h1 {
+         font-size: 60px;
+     }
+ }
+
+ @media only screen and (max-width: 600px) {
+     .main_Container {
+         border: 2px solid rgb(236, 22, 22);
+         padding: 44px;
+     }
+
+     h1 {
+         font-size: 45px;
+     }
+ }
+
+ @media only screen and (max-width: 400px) {
+     .main_Container {
+         border: 2px solid rgb(236, 22, 22);
+         padding: 44px;
+     }
+
+     h1 {
+         font-size: 30px;
+     }
+ }

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layouts</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+
+        .main_Contianer{
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+   #item1{
+    grid-area: Heading;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    box-shadow: -1px 2px 2px 1px grey;
+   }
+
+    .mainGridContainer{
+        display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "Heading Heading Heading";
+    border: 2px solid black;
+    /* width: 700px;
+    height: 500px; */
+        
+    }
+
+  
+    .menu_Container a{
+        white-space: inherit;
+    text-decoration: none;
+    background-color: black;
+    padding: 30px;
+    color: white;
+    margin: 20px;
+    display: flex;
+    border-radius: 12px;
+    }
+
+    .inner_Container{
+        height: 146px;
+    padding: 15px;
+    width: 230px;
+    }
+      
+
+    .table_Container{
+        margin: 60px 0px;
+    }
+    /* Media Querries */
+    /* ////////////////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 900px) {
+ 
+
+
+    .main_Contianer{
+        display: flex;
+        flex-direction: column;
+        padding: 33px;
+    }
+
+
+    .mainGridContainer{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: "Heading Heading" ;
+        
+
+}
+
+.menu_Container{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.menu_Container a{
+
+    white-space: inherit;
+    text-decoration: none;
+    background-color: black;
+    padding: 12px 39px;
+    color: white;
+    display: flex;
+    border-radius: 12px;
+
+}
+
+
+}
+
+@media only screen and (max-width: 650px) {
+ 
+    .main_Contianer{
+           width: 100%;
+           height: 100%;
+           padding: 30px;
+            display: flex;
+            justify-content: space-around;
+    }
+    .menu_Container{
+     display: initial;
+      }
+
+    .mainGridContainer{
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-areas: "Heading " ;
+        
+}
+
+.menu_Container a{
+    white-space: inherit;
+    text-decoration: none;
+    background-color: black;
+    padding: 12px 18px;
+    color: white;
+    margin: 20px;
+    display: flex;
+    border-radius: 12px;
+    }
+
+}
+
+
+
+ /* ////////////////////////////////////////////////////////////////////////////////////// */
+
+
+</style>
+</head>
+<body>
+    <div class="main_Contianer"> 
+    <div class="menu_Container"> 
+        <a href="./Public.html">Public</a>
+        <a href="./View.html">View</a>
+        <a href="./HR.html">HR</a>
+        <a href="./Network Details.html">Network Details</a>
+    </div>
+    <div class="table_Container"> 
+    <div class="mainGridContainer">
+        <div class="" id="item1"><h2>Details</h2></div>
+        <div class="inner_Container" id="item2">
+           <p>Name: abc</p>
+           <p>Value: def</p> 
+           <p>Extra: xyz</p> 
+        </div>
+        <div class="inner_Container" id="item3">
+           <p>Name: abc</p>
+          <p>Value: def</p>
+           <p>Extra: xyz</p>
+        </div>
+        <div class="inner_Container" id="item4">
+           <p>Name: abc</p>
+           <p>Value: def</p>
+           <p>Extra: xyz</p>
+        </div>
+        <div class="inner_Container" id="item5">
+           <p>Name: abc</p>
+           <p>Value: def</p>
+           <p>Extra: xyz</p>
+        </div>
+        <div class="inner_Container" id="item6">
+           <p>Name: abc</p>
+           <p>Value: def</p>
+           <p>Extra: xyz</p>
+        </div>
+        <div class="inner_Container" id="item7">
+           <p>Name: abc</p>
+           <p>Value: def</p>
+           <p>Extra: xyz</p>
+        </div>
+        <div class="inner_Container" id="item8">
+           <p>Name: abc</p>
+           <p>Value: def</p>
+           <p>Extra: xyz</p>
+        </div>
+        <div class="inner_Container" id="item9">
+           <p>Name: abc</p>
+           <p>Value: def</p>
+           <p>Extra: xyz</p>
+        </div>
+        <div class="inner_Container" id="item10">
+        <p>Name: abc</p>
+           <p>Value: def</p>
+           <p>Extra: xyz</p>
+        </div>
+    </div>
+</div>
+<!-- Tablle Ends Here -->
+</div>
+</body>
+</html>

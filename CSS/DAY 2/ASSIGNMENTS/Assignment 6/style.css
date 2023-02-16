@@ -1,0 +1,193 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#mainContainer {
+    height: 100vh;
+    display: flex;
+}
+
+.resumeContainer {
+    display: flex;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: burlywood;
+    flex-direction: column;
+    flex: 25%;
+    align-items: center;
+
+}
+
+.imageContainer {
+    text-align: center;
+        padding: 12px;
+}
+
+img {
+    width: 50%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    margin: 20px;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    text-align: center;
+}
+
+a:hover {
+         color: white;
+            background-color: #767373;
+}
+
+.sideInformationCotianer {
+    flex: 75%;
+    background-color: violet;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+#aboutDiv{
+    display: none;
+}
+#objectiveDiv{
+    display: none;
+}
+#educationDiv{
+    display: none;
+}
+#contactsDiv{
+    display: none;
+}
+
+
+#skillsDiv{
+    display: none;
+}
+
+
+#personalprojectsDiv{
+    display: none;
+}
+
+li{
+        padding: 14px 12px;
+            font-size: 1.2rem;
+}
+span{
+    font-weight: 600;
+}
+
+/* -----------------------------Side CSS----------------------------------------- */
+
+
+#aboutDiv:target {
+    display: block;
+}
+
+#objectiveDiv:target {
+    display: block;
+    padding: 150px;
+
+}
+
+#educationDiv:target {
+    display: block;
+}
+
+#contactsDiv:target {
+    display: block;
+}
+
+
+#skillsDiv:target {
+    display: block;
+}
+
+
+#personalprojectsDiv:target {
+    display: block;
+}
+
+
+h2{
+    font-size: 33px;
+    margin: 12px;
+}
+
+.educationLi{
+    margin: 12px;
+    padding: 12px;
+}
+
+/* -----------------------------Side CSS----------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <------------------------Media Query-------------------------> */
+@media only screen and (max-width: 850px) {
+    #mainContainer {
+        flex-direction: column;
+    }
+
+    .resumeContainer {
+        flex: auto;
+        justify-content: center;
+    }
+
+    a {
+        margin: 0px;
+
+    }
+
+    .sideInformationCotianer {
+        background-color: violet;
+            padding: 20px;
+    }
+        img {
+            width: 30%;
+        }
+    
+     .infoContainer{
+        padding: 60px;
+     }
+   #objectiveDiv:target {
+    padding: 12px;
+    
+}
+
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    .infoContainer {
+            padding: 10px;
+        }
+
+
+
+             }
+
+
+/* <------------------------Media Query-------------------------> */

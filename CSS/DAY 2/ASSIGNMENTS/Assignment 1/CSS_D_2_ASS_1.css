@@ -1,0 +1,155 @@
+ 
+ /* ######### ROOT CSS ############ */
+ 
+ 
+ * {
+     box-sizing: border-box;
+ }
+
+ body {
+     margin: 0px;
+ }
+
+ header {
+     display: flex;
+     justify-content: space-between;
+     background-color: darkgrey;
+     flex-wrap: wrap;
+ }
+
+ #Navigation_Container {
+     padding: 12px;
+
+ }
+
+ #Navigation_Container nav {
+     display: flex;
+     flex-wrap: wrap;
+
+ }
+
+ #Navigation_Container nav a {
+     padding: 12px;
+     margin: 12px;
+     border: 2px solid black;
+     color: black;
+     text-decoration: none;
+ }
+
+ #main_logo {
+     width: 80px;
+ }
+
+ #logo_Container {
+     padding: 12px;
+ }
+
+ #Middle_Section {
+     display: flex;
+     height: 100vh;
+     background: antiquewhite;
+     flex-wrap: wrap;
+ }
+
+ .left_Bar {
+     flex: 15%;
+     background-color: brown;
+
+ }
+
+ .right_Section {
+     flex: 75%;
+     background-color: burlywood;
+ }
+
+ #right_section_image {
+     height: 800px;
+     width: 100%;
+ }
+
+ .image_Container {
+     text-align: center;
+     width: 100%;
+ }
+
+
+
+ /* ################################### Media Queries ############################### */
+ @media only screen and (max-width: 800px) {
+     #Middle_Section {
+         display: flex;
+         height: 100vh;
+         background: antiquewhite;
+         flex-wrap: wrap;
+         align-content: flex-start;
+     }
+
+     .left_Bar {
+         height: 250px;
+         background-color: brown;
+         width: 100%;
+     }
+
+     .right_Section {
+         flex: 75%;
+         background-color: burlywood;
+         height: -webkit-fill-available;
+     }
+ }
+
+ /* @media only screen and (max-width: 400px) {
+            
+           } */
+ /* ################################### Media Queries ############################### */
+
+  /* ######### ROOT CSS ############ */
+  /* ######### ROOT CSS ############ */
+  /* ######### ROOT CSS ############ */
+  /* ######### ROOT CSS ############ */
+
+  
+
+  .rightSectionNavLink {
+      text-decoration: none;
+      padding: 22px;
+      border: 2px solid;
+      color: black;
+  }
+
+  .rightSectionNavLink:hover {
+      border: 2px solid coral;
+      color: gray;
+  }
+
+  .rightSection_li {
+      list-style: none;
+
+  }
+
+  #right_Section_ul {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .rightSection_li {
+          list-style: none;
+          margin: 0px 15px;
+      }
+
+      .display_none {
+          display: none;
+      }
+  }
+
+  @media only screen and (max-width: 400px) {
+
+    #right_Section_ul {
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .display_none {
+          display: none;
+      }
+  }

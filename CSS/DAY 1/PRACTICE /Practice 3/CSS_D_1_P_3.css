@@ -1,0 +1,15 @@
+.right_Section h1 .right_Section_h2{
+    color: rgb(221, 221, 238);
+}
+
+#right_Section_ul {
+    display: inline;
+    margin: 22px;
+    color: red;
+}
+
+.right_Section_li {
+    display: inline;
+    margin: 22px;
+    color: red;
+}

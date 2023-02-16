@@ -1,0 +1,11 @@
+.main_Container {
+    border: 2px solid rgb(35, 23, 199);
+    padding: 12px;
+}
+
+@media only screen and (max-width: 500px) {
+    .main_Container {
+        border: 2px solid rgb(236, 22, 22);
+        padding: 44px;
+    }
+}

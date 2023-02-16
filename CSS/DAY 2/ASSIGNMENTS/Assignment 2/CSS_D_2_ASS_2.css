@@ -1,0 +1,202 @@
+ /* ######### ROOT CSS ############ */
+ * {
+     box-sizing: border-box;
+ }
+
+ body {
+     margin: 0px;
+ }
+
+ header {
+     display: flex;
+     justify-content: space-between;
+     background-color: darkgrey;
+     flex-wrap: wrap;
+ }
+
+ #Navigation_Container {
+     padding: 12px;
+
+ }
+
+ #Navigation_Container nav {
+     display: flex;
+     flex-wrap: wrap;
+
+ }
+
+ #Navigation_Container nav a {
+     padding: 12px;
+     margin: 12px;
+     border: 2px solid black;
+     color: black;
+     text-decoration: none;
+ }
+
+ #main_logo {
+     width: 80px;
+ }
+
+ #logo_Container {
+     padding: 12px;
+ }
+
+ #Middle_Section {
+     display: flex;
+     height: 100vh;
+     background: antiquewhite;
+     flex-wrap: wrap;
+ }
+
+ .left_Bar {
+     flex: 15%;
+     background-color: brown;
+
+ }
+
+ .right_Section {
+     flex: 75%;
+     background-color: burlywood;
+ }
+
+ #right_section_image {
+     height: 800px;
+     width: 100%;
+ }
+
+ .image_Container {
+     text-align: center;
+     width: 100%;
+ }
+
+
+
+ /* ################################### Media Queries ############################### */
+ @media only screen and (max-width: 800px) {
+     #Middle_Section {
+         display: flex;
+         height: 100vh;
+         background: antiquewhite;
+         flex-wrap: wrap;
+         align-content: flex-start;
+     }
+
+     .left_Bar {
+         height: 250px;
+         background-color: brown;
+         width: 100%;
+     }
+
+     .right_Section {
+         flex: 75%;
+         background-color: burlywood;
+         height: -webkit-fill-available;
+     }
+ }
+
+ /* @media only screen and (max-width: 400px) {
+            
+           } */
+ /* ################################### Media Queries ############################### */
+
+ /* ######### ROOT CSS ############ */
+ /* ######### ROOT CSS ############ */
+ /* ######### ROOT CSS ############ */
+ /* ######### ROOT CSS ############ */
+ /* ######### ROOT CSS ############ */
+
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#h2Heading {
+    font-size: 50px;
+    padding: 20px;
+    margin: 12px;
+}
+
+
+.galleryContainer {
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    justify-content: center;
+}
+
+.galleryImg {
+    width: 100%;
+    padding: 10px;
+}
+
+.imageColumn {
+    flex: 25%;
+    max-width: 40%;
+    margin: auto;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+/*============================= Media Queries Section ========================================== */
+/*============================= Media Queries Section ========================================== */
+/*============================= Media Queries Section 1 ========================================== */
+
+
+/*============================= Media Queries Section ========================================== */
+/*============================= Media Queries Section ========================================== */
+/*============================= Media Queries Section 2 ========================================== */
+
+@media (max-width: 800px) {
+    .galleryImg {
+        width: 100%;
+        padding: 10px;
+        /* border: 2px solid; */
+    }
+
+    .imageColumn {
+        flex: 55%;
+        max-width: 50%;
+        margin: auto;
+    }
+
+}
+
+/*============================= Media Queries Section ========================================== */
+/*============================= Media Queries Section ========================================== */
+/*============================= Media Queries Section 3 ========================================== */
+@media (max-width: 630px) {
+    .galleryContainer {
+        border: 2px solid black;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: scroll;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .imageColumn {
+        flex: 100%;
+        max-width: 100%;
+        margin: auto;
+    }
+
+        .galleryImg {
+        width: 100%;
+    }
+}

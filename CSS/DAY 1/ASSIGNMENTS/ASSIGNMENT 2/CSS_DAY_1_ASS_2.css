@@ -1,0 +1,107 @@
+
+.resumeContainer_Outer {
+    width: 100%;
+    height: 100%;
+}
+
+.both_Section_Container {
+    display: flex;
+    justify-content: center;
+}
+
+.inline_block {
+    display: inline-block;
+}
+
+.left_Side {
+    background-color: black;
+}
+
+.right_Side {
+    width: 40%;
+    background-color: white;
+    margin: 0px;
+}
+
+h2 {
+    color: #03a9f4;
+    margin-top: 30px;
+}
+
+.color_white {
+    color: white;
+}
+
+.universal_border {
+    border: 2px solid rgb(245, 240, 240);
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    margin: 56px 60px;
+}
+
+#education_table {
+    width: 100%;
+    height: 50%;
+    vertical-align: middle;
+    border-collapse: collapse !important;
+}
+
+.education_table_tr_th_td_formating {
+    border: 2px solid black !important;
+    border-collapse: collapse !important;
+    padding: 10px !important;
+}
+
+.education_table_formating {
+    height: 50px;
+}
+
+.main_Title_format {
+    background-color: #f9d514;
+}
+
+.main_heading_Name_format {
+    padding: 30px 30px 10px 30px;
+    font-size: 36px;
+    color: black;
+    font-family: system-ui;
+}
+
+.main_heading_p_format {
+    padding: 0px 0px 0px 15px;
+    font-size: 20px;
+}
+
+.universal_div_padding {
+    padding: 12px;
+}
+
+.universal_div_padding_right_side {
+    padding: 0px 0px 0px 12px;
+}
+
+li {
+    margin: 12px 0px 0px 0px;
+}
+
+video {
+    width: 506px;
+    height: 300px;
+}
+
+hr {
+    height: 4px;
+    background: #f44336;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 0px darkgrey;
+    margin-left: 0px;
+    width: 50%;
+    margin-bottom: 22px;
+}
+
+caption {
+    display: none;
+}

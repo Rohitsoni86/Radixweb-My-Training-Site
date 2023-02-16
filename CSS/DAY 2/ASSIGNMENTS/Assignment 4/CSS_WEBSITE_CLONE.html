@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Site Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #e1e6ec;
+            padding: 12px;
+        }
+
+        .left_section {
+            margin: 0px 0px 0px 50px;
+        }
+
+        .left_section a {
+            text-decoration: none;
+        }
+
+        .right_Section {
+            margin: 0px 60px;
+        }
+
+        .head_link {
+            margin-left: 12px;
+            display: inline;
+            text-decoration: none;
+            color: black;
+        }
+
+        .section_1 {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(255, 255, 255);
+            padding: 25px;
+            margin: 20px 40px;
+        }
+
+        .logo_Container img {
+            height: 109px;
+            width: 100px;
+        }
+
+        .number_Css {
+            font-size: 40px;
+            color: dimgray;
+        }
+
+        .section_2 {
+            margin: 20px 0px;
+
+            padding: 20px;
+        }
+
+
+
+
+        .Navigation_Container {
+
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            margin: 5px 30px;
+            padding: 20px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            color: dimgray;
+        }
+
+        nav a:hover {
+            background-color: #05baf6;
+            color: white;
+        }
+
+
+        .section_3 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: #E9F1FA;
+        }
+
+        .main_Heading_Container {
+            width: 705px;
+            padding: 20px;
+        }
+
+        .main_Heading_Container h2 {
+            display: inline-block;
+            font-size: 70px;
+        }
+
+        .main_Heading_Container h4 {
+            font-size: 30px;
+        }
+
+        .main_Heading_Container p {
+            padding: 12px 0px;
+        }
+
+
+        /* Form CSS  */
+        /* ===================================================================================== */
+
+        input[type=textarea] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+
+        input {
+            width: 15.2rem;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            display: inline-block;
+            margin: 20px 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            display: inline-block;
+
+        }
+
+        .Text_area {
+            grid-area: Text_Area;
+        }
+
+        .btn_container {
+            grid-area: Btn_Container;
+        }
+
+        #SEND_btn {
+            width: 100%;
+            height: 40px;
+            background-color: #05baf6;
+            border-radius: 6px;
+            border: 1px solid transparent;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        #SEND_btn:hover {
+            color: #05baf6;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .form_Container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-areas:
+                "firstName LastName"
+                "Email Number"
+                "Text_Area Text_Area"
+                "Btn_Container Btn_Container"
+            ;
+        }
+
+
+        #get_Started_btn_css {
+            padding: 12px;
+            font-weight: 800;
+            border-radius: 8px;
+            font-size: 18px;
+            background-color: #05baf6;
+            color: white;
+            border: transparent;
+        }
+
+
+        /* ===================================================================================== */
+
+
+
+
+        /* Section 4 awesomeTitle_Section CSS */
+        /* ===================================================================================== */
+
+        .awesomeTitle_Section {
+            display: flex;
+            justify-content: space-around;
+            background-color: #3ba4f6d1;
+            flex-wrap: wrap;
+        }
+
+        .awesome_Title_Div {
+            width: 900px;
+            padding: 20px;
+        }
+
+
+        .awesomeTitle_Section h2 {
+            display: inline-block;
+            font-size: 50px;
+        }
+
+        .awesomeTitle_Section p {
+            padding: 12px 0px;
+        }
+
+
+        .Button_Container {
+            width: 380px;
+            text-align: center;
+            position: relative;
+            top: 60px;
+        }
+
+        #design_button {
+            padding: 12px;
+            border-radius: 0px;
+            color: #2196f3;
+            font-size: 20px;
+            background-color: white;
+            font-weight: 600;
+            border: 1px solid;
+        }
+
+        /* ===================================================================================== */
+
+
+
+
+
+        /* Section 4 video_Section CSS */
+        /* ===================================================================================== */
+
+        .video_Section {
+            display: flex;
+            justify-content: center;
+            padding: 30px 0px;
+            flex-wrap: wrap;
+        }
+
+        .learn_more_button {
+            padding: 12px;
+            border-radius: 0px;
+            color: #3ba4f6d1;
+            font-size: 20px;
+            background-color: white;
+            font-weight: 600;
+            border: 1px solid;
+        }
+
+        video {
+            height: 330px;
+            width: 600px;
+        }
+
+        /* ===================================================================================== */
+        /* Section 5 card_Section CSS */
+        /* ===================================================================================== */
+
+
+        /* .card_Section{
+           
+        } */
+        .card_Main_Container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 332px;
+            padding: 12px;
+            margin: 22px;
+        }
+
+        .card_image_Section {
+            display: inline-block;
+            object-fit: fill;
+            margin: 0px 0px 12px 0px;
+        }
+
+        .card_image_Section img {
+            width: 100%;
+        }
+
+        .card_Text_Section {
+            display: inline-block;
+        }
+
+        .card_Text_Section h2 {
+            display: inline-block;
+            margin-top: 12px;
+        }
+
+        .card_Text_Section p {
+            line-height: 1.2;
+            margin-top: 12px;
+        }
+
+
+        .card_button {
+            text-align: center;
+        }
+
+        /* ===================================================================================== */
+
+        /* ===================================================================================== */
+        /* Section 6 Footer Section CSS */
+        /* ===================================================================================== */
+
+
+        .footer_section {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            background-color: darkgrey;
+            padding: 40px;
+            margin: 30px 0px 0px 0px;
+        }
+
+        .footer_links_div h3 {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer_links_div a,
+        h3 {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-weight: 300;
+        }
+
+        footer {
+            background-color: rgb(37, 35, 35);
+            padding: 12px;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        .footer_links_div {
+            margin: 12px 12px;
+            padding: 12px;
+        }
+
+        /* ===================================================================================== */
+
+
+        /* ===================================================================================== */
+        /* Media Queries Section */
+        /* ===================================================================================== */
+
+
+        @media screen and (max-width: 800px) {
+            .main_Heading_Container {
+                width: auto;
+                padding: 20px;
+            }
+
+            video {
+                width: auto;
+                height: auto;
+            }
+
+            .Button_Container {
+                text-align: center;
+                top: 0px;
+            }
+
+            #main_navigation {
+                display: grid;
+                flex-direction: column;
+                grid-template-columns: auto auto auto;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+
+            .left_section {
+                margin: auto;
+            }
+
+            .right_Section {
+                margin: auto;
+            }
+
+            .form_Container {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-areas:
+                    "firstName"
+                    "LastName"
+                    "Email"
+                    "Number"
+                    "Text_Area"
+                    "Btn_Container"
+                ;
+
+            }
+
+            .textarea {
+                width: 100%;
+                height: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+                display: inline-block;
+            }
+
+
+
+            .logo_Container img {
+                height: auto;
+                width: auto;
+            }
+
+            .Number_Comes_here {
+                text-align: center;
+                padding: 12px;
+            }
+
+            .number_Css {
+                font-size: 2.2rem;
+                color: dimgray;
+            }
+
+            #SEND_btn {
+                width: 100%;
+                height: 40px;
+                background-color: #05baf6;
+                border-radius: 6px;
+                border: 1px solid transparent;
+                font-weight: 600;
+                font-size: 20px;
+            }
+
+            .Button_Container {
+                text-align: center;
+                top: 0px;
+            }
+
+            .awesomeTitle_Section h2 {
+                font-size: 30px;
+            }
+
+
+            .section_2 {
+                display: none;
+            }
+        }
+
+        /* ===================================================================================== */
+    </style>
+</head>
+
+<body>
+    <!-- header Section Start -->
+    <header>
+        <div class="left_section">
+            <a href=""><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:25px"></i>
+                <h5 class="head_link">Shopping Cart</h5>
+            </a>
+        </div>
+        <div class="right_Section">
+            <i class="fa fa-user" aria-hidden="true" style="font-size:36px"></i> <a href="#" class="head_link">Sign In /
+                Register</a>
+        </div>
+    </header>
+    <!-- header Section Ends -->
+    <!-- Section 1 Starts -->
+    <div class="section_1">
+        <div class="logo_Container">
+            <img src="./logooooo.png" alt="logo Comes Here">
+        </div>
+        <div class="Number_Comes_here">
+            <h2 class="number_Css">512-219-8000</h2>
+        </div>
+    </div>
+    <!-- Section 1 Ends -->
+    <!-- Section 2 Navigation_Container Start -->
+    <div class="section_2">
+        <div class="Navigation_Container">
+            <nav id="main_navigation">
+                <a href="#">Yard Signs</a>
+                <a href="#">Banners</a>
+                <a href="#">Accesories</a>
+                <a href="#">Gallery</a>
+                <a href="#">About</a>
+                <a href="#">Price</a>
+                <a href="#">Materials</a>
+                <a href="#">FAQ</a>
+                <a href="#">Custom Quote</a>
+            </nav>
+        </div>
+    </div>
+    <!-- Section 2 Navigation_Container Ends -->
+    <!-- Section 3 main_Heading_Container Starts -->
+    <div class="section_3">
+        <div class="main_Heading_Container">
+            <h2>Big Headline</h2>
+            <h4>Smaller Subhead Here</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium doloribus eligendi soluta ullam hic
+                aperiam ad voluptate, delectus sed corporis blanditiis cum ea, vero optio exercitationem tempora eum
+                libero voluptates praesentium dolores sit. A.</p>
+            <button id="get_Started_btn_css">Get Started</button>
+        </div>
+        <form action="" target="_blank" class="form_Container">
+            <input type="text" id="First_name" for="First_name" placeholder="First Name :">
+            <input type="text" id="Last_name" for="Last_name" placeholder="Last Name :">
+            <input type="email" id="Email" for="Email" placeholder="Email :">
+            <input type="tel" id="Mobile Number" for="Mobile Number" placeholder="Mobile Number :">
+            <div class="Text_area" style="padding: 20px;"> <textarea name="Message_area_main_Form"
+                    id="Message_area_main_Form" placeholder="Message"></textarea> </div>
+            <div class="btn_container" style="padding: 20px;"><button id="SEND_btn">SEND</button></div>
+        </form>
+    </div>
+    <!-- Section 3 main_Heading_Container Ends Here -->
+    <!-- Section 4 awesomeTitle_Section Starts Here -->
+    <div class="awesomeTitle_Section">
+        <div class="awesome_Title_Div">
+            <h2>This is Where an Awesome title Renders</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto vitae magnam ad dolorem
+                pariatur. Provident iste velit cum minus eos autem totam, dignissimos enim beatae dolores repudiandae
+                doloremque, nesciunt fugit omnis nam a. Dignissimos ipsum voluptate rerum corrupti iusto aspernatur ipsa
+                quibusdam reiciendis.</p>
+        </div>
+        <div class="Button_Container">
+            <button id="design_button">Design It Now</button>
+        </div>
+    </div>
+    <!-- Section 4 awesomeTitle_Section Ends Here -->
+    <!-- Section 5 video_Section Starts Here -->
+    <div class="video_Section">
+        <div class="video_Container">
+            <video controls poster="./video logo.jpg">
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video_Title_Container">
+            <div class="main_Heading_Container">
+                <h2>Watch This</h2>
+                <h4>Its a video,Yo! </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium doloribus eligendi soluta ullam
+                    hic aperiam ad voluptate, delectus sed corporis blanditiis cum ea, vero optio exercitationem tempora
+                    eum libero voluptates praesentium dolores sit. A.</p>
+                <button class="learn_more_button">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <!-- Section 5 video_Section Ends Here -->
+    <!-- Section 6 Card_Section Starts Here -->
+
+    <div class="card_Section">
+        <div class="card_Main_Container">
+            <!-- Card 1-->
+            <div class="card">
+                <div class="card_image_Section">
+                    <img src="./project_1.jpg" alt="image">
+                </div>
+                <div class="card_Text_Section">
+                    <h2>Project One</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic maiores ad quas. Nisi quam error
+                        enim incidunt, aperiam ut quis.</p>
+                </div>
+            </div>
+            <!-- Card 1-->
+            <!-- Card 2-->
+            <div class="card">
+                <div class="card_image_Section">
+                    <img src="./project_2.jpg" alt="image">
+                </div>
+                <div class="card_Text_Section">
+                    <h2>Project Two</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic maiores ad quas. Nisi quam error
+                        enim incidunt, aperiam ut quis.</p>
+                </div>
+            </div>
+            <!-- Card 3-->
+            <!-- Card 4-->
+            <div class="card">
+                <div class="card_image_Section">
+                    <img src="./project_3.jpg" alt="image">
+                </div>
+                <div class="card_Text_Section">
+                    <h2>Project Three</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic maiores ad quas. Nisi quam error
+                        enim incidunt, aperiam ut quis.</p>
+                </div>
+            </div>
+            <!-- Card 4-->
+        </div>
+        <div class="card_button">
+            <button class="learn_more_button">Learn More</button>
+        </div>
+    </div>
+
+
+    <!-- Section 6 Card_Section Ends Here -->
+
+    <!-- Section 7 Footer Section Starts Here -->
+    <div class="footer_section">
+        <!-- //////////////////////////////////////////////////////////////////// -->
+        <div class="footer_links_div">
+            <h3>Help</h3>
+            <a href="">Contact Us</a>
+            <a href="">F.A.Q.</a>
+            <a href="">Sitemap</a>
+            <a href="">Pricing</a>
+            <a href="">Redeem Promo</a>
+
+            <h3>Account</h3>
+            <a href="">My Account</a>
+        </div>
+        <div class="footer_links_div">
+            <h3>Products</h3>
+            <a href="">Yard Signs</a>
+            <a href="">Real Estate Signs</a>
+            <a href="">Vinyl Banners</a>
+            <a href="">Car Magnetics</a>
+            <a href="">Banner Stands</a>
+            <a href="">Accessories</a>
+            <a href="">Design Services</a>
+        </div>
+        <div class="footer_links_div">
+            <h3>Company</h3>
+            <a href="">Overview</a>
+            <a href="">Press Rooms</a>
+            <a href="">Careers</a>
+            <a href="">Reviews</a>
+
+            <h3>Programs</h3>
+            <a href="">afiliate</a>
+        </div>
+        <!-- //////////////////////////////////////////////////////////////////// -->
+        <div class="footer_links_div">
+            <h3>Help</h3>
+            <a href="">Contact Us</a>
+            <a href="">F.A.Q.</a>
+            <a href="">Sitemap</a>
+            <a href="">Pricing</a>
+            <a href="">Redeem Promo</a>
+
+            <h3>Account</h3>
+            <a href="">My Account</a>
+        </div>
+        <div class="footer_links_div">
+            <h3>Products</h3>
+            <a href="">Yard Signs</a>
+            <a href="">Real Estate Signs</a>
+            <a href="">Vinyl Banners</a>
+            <a href="">Car Magnetics</a>
+            <a href="">Banner Stands</a>
+            <a href="">Accessories</a>
+            <a href="">Design Services</a>
+        </div>
+        <div class="footer_links_div">
+            <h3>Company</h3>
+            <a href="">Overview</a>
+            <a href="">Press Rooms</a>
+            <a href="">Careers</a>
+            <a href="">Reviews</a>
+
+            <h3>Programs</h3>
+            <a href="">afiliate</a>
+        </div>
+        <!-- //////////////////////////////////////////////////////////////////// -->
+    </div>
+    <!-- Section 7 Footer Section Ends Here -->
+    <footer>
+        <h3>Copyright @ 2016 SignDepotATX.com</h3>
+    </footer>
+</body>
+
+</html>

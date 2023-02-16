@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+.not_CSS{
+    margin: auto;
+    padding: auto;
+}
+
+.mainContainer {
+    display: flex;
+    border: 2px solid black;
+    padding: 12px;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.box {
+    border: 2px solid green;
+    margin: 12px;
+    text-align: center;
+    padding: 50px;
+}
